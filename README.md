@@ -78,6 +78,7 @@ Not yet applicable — the scaffold lands in the Day 1 contract commit. After
 that:
 
 ```bash
+nvm use          # Node 22 — required
 npm install
 cp .env.example .env.local   # fill in
 npm run db:migrate

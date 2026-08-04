@@ -55,6 +55,14 @@ Silently editing across the boundary is how this project breaks.
 
 ## Conventions
 
+- **Node 22 required** (see `.nvmrc`). Next 16 needs >= 20.9. Run `nvm use`
+  before anything else, or builds fail confusingly.
+- **Builds use webpack, not Turbopack.** Turbopack cannot resolve the Tailwind
+  v4 native binary on Windows. `next build --webpack` is set in package.json —
+  do not remove the flag.
+- shadcn renamed `form` to `field`. It is at `src/components/ui/field.tsx`.
+- **`npx shadcn init` overwrites CLAUDE.md and README.md.** It has already been
+  run; do not run it again.
 - TypeScript everywhere, `strict: true`.
 - All timestamps stored UTC (`timestamptz`). Salon-local rendering uses
   `salon.timezone` (IANA). Never store a local time.
