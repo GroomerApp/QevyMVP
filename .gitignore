@@ -1,0 +1,56 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# next
+.next/
+out/
+build/
+dist/
+
+# env — never commit real values
+.env
+.env.local
+.env*.local
+
+# vercel / turbo
+.vercel
+.turbo
+
+# testing
+coverage/
+playwright-report/
+test-results/
+blob-report/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# os
+.DS_Store
+Thumbs.db
+
+# editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# media — this repo is code only
+*.mkv
+*.mp4
+*.mov
+*.mp3
+*.m4a
+*.wav
+
+# secrets
+*.pem
+*.key
+**/TTL*KEY*.txt
